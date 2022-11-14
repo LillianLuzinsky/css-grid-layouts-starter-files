@@ -52,12 +52,19 @@ main {
 main div {
   overflow: hidden;
   background-color: white;
+  border-radius: 6px;
+  border: 16px solid #fff;
+  box-shadow: 3px 3px 3px rgba(red, green, blue, alpha);
 }
 
-img {
+main img {
   transition: transform 300ms ease;
+  opacity: 0.85;
+  min-width: 100%;
+  height: 100%;
 }
 
-img:hover {
+main img:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
