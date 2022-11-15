@@ -68,6 +68,10 @@ main .tall {
   grid-row: span 3;
 }
 
+/* main .thumbnail:last-child {
+  visibility: hidden;
+} */
+
 @media screen and (max-width: 1024px) {
   main {
     grid-template-columns: 1fr 1fr;
