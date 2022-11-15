@@ -75,45 +75,48 @@ html {
 
 .thumbnail {
   max-width: 350px;
+  overflow: hidden;
 }
 
-.thumbnail-header {
-  position: relative;
-}
-
-.thumbnail-header:hover{
-  transform: scale(1.1);
-}
-
-.thumbnail-header img{
-  width: 350px;
+.thumbnail-image {
+  width: 100%;
+  overflow: hidden;
   max-height: 350px;
-  object-fit: cover;
+  margin-bottom: 1.5rem;
   border-radius: 1.5rem;
 }
 
+.thumbnail img{
+  transition: transform 300ms ease;
+  opacity: 0.85;
+  object-fit: cover;
+  border-radius: 1.5rem;
 
-.thumbnail-header h2 {
+}
+
+.thumbnail:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+.thumbnail h2 {
   font-family: century-gothic, sans-serif;
   font-weight: 700;
   font-size: 4rem;
   line-height: 5rem;
-  position: absolute;
-  bottom: -2rem;
   width: 5rem;
   text-align: center;
 }
 
-.thumbnail-header h2:hover {
-  bottom: -1.5rem;
-  transition: all 500ms ease-out;
+.thumbnail-text {
+  background-color: pink;
 }
 
-.thumbnail-text {
-  background-color: red;
+.thumbnail-text2 {
+  background-color: magenta;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1.5rem;
 }
 
 .shape {
@@ -126,22 +129,12 @@ html {
   transition: all 500ms ease-out;
 }
 
-.shape:hover {
-  margin-top: 0.5rem;
-  opacity: 1;
-}
-
-.thumbnail-text p {
+.thumbnail p {
   grid-column: span 2;
-  padding-top: 0.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-top: 0.5rem;
   transition: all 500ms ease-out;
-}
-
-.thumbnail p:hover {
-  margin-top: 0rem;
-  font-style: italic;
 }
 
 
