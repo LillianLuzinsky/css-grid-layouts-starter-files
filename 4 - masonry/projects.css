@@ -65,52 +65,62 @@ html {
 
 .project-thumbnails {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: auto;
+  display: grid;
   max-width: 1200px;
-  background: red;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  background-color: black;
+  font-family: 'Mulish', sans-serif;
 }
 
 .thumbnail {
+  max-width: 350px;
+}
+
+.thumbnail-header {
   position: relative;
-  background-color: blue;
 }
 
-.thumbnail img {
-  min-height: 100%;
-}
-
-.thumbnail-text {
-  position: absolute;
-  max-width: 100%;
-  bottom: 25%;
-  display: flex;
-  flex-direction: row;
-}
-
-.thumbnail-text h2 {
+.thumbnail-header h2 {
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
   font-size: 4rem;
   line-height: 5rem;
-  max-width: 6.5rem;
+  position: absolute;
+  bottom: -2rem;
+  width: 5rem;
   text-align: center;
-  background-color: #000;
-  height: 5rem;
 }
 
 
+.thumbnail-header img{
+  width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+
+.thumbnail-text {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
 .shape {
+  height: 2.5rem;
+  width: 5rem;
   background-color: #00BCD4;
-  width: 6.5rem;
-  height: 3.25rem;
-  border-radius: 0  0 10rem 10rem;
   opacity: 0.5;
+  border-radius: 0 0 10rem 10rem;
+  margin-top: 1rem;
 }
 
 .thumbnail-text p {
-  background-color: orange;
-  padding-top: 3rem;
+  grid-column: span 2;
 }
+
 
 
 
