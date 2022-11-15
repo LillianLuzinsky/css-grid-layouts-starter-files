@@ -4,12 +4,6 @@ body {
   margin: 0;
   font-family: "Poppins";
   background: #f7f7f7;
-  background-color: #222;
-}
-
-header {
-  background-color: white;
-  padding: 10px;
 }
 
 nav {
@@ -19,6 +13,7 @@ nav {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
   align-items: center;
+  background-color: white;
 }
 
 nav a {
@@ -33,7 +28,7 @@ nav h1 {
 
 nav h1 div:first-child {
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 nav h1 div:last-child {
@@ -47,233 +42,5 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 250px;
-  gap: 30px;
-}
-
-main div {
-  overflow: hidden;
-  background-color: white;
-  border-radius: 6px;
-  border: 16px solid #fff;
-  box-shadow: 3px 3px 3px rgba(red, green, blue, alpha);
-}
-
-main img {
-  transition: transform 300ms ease;
-  opacity: 0.85;
-  min-width: 100%;
-  height: 100%;
-}
-
-main img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-main .short {
-  grid-row: span 1;
-}
-
-main .tall {
-  grid-row: span 2;
-}
-
-
-@import url("https://use.typekit.net/zbq4ktc.css");
-
-/* font-family: century-gothic, sans-serif;
-   font-weight: 400;
-   font-style: normal;
-
-   font-family: century-gothic, sans-serif;
-   font-weight: 700;
-   font-style: normal;
-   
-   font-family: century-gothic, sans-serif;
-   font-weight: 700;
-   font-style: normal;*/
-
-   @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
-
-   /*
-   font-family: 'Mulish', sans-serif;
-   font-weight: 400;
-
-   font-family: 'Mulish', sans-serif;
-   font-weight: 800;
-   */
-
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-
-html {
- scroll-behavior: smooth;
-}
-
-body{
-  font-family: 'Mulish', sans-serif;
-  font-weight: 400;
-  overflow-x: hidden;
-  color: white;
-  width: 100vw;
-  background-color: #00BCD4;
-  background-color: #222;
-}
-
-ul {
- list-style: none;
-}
-
-a {
- text-decoration: none;
- color: white;
- letter-spacing: 1px;
- cursor: pointer;
-}
-
-section {
- margin: 0 auto;
- min-height: 100vh;
- background-color: #222;
- color: white;
- border-bottom: 1px solid white;
- padding-bottom: 4.5rem;
-}
-
-.content {
- padding: 0 5%;
- max-width: 1200px;
- margin: 0 auto;
-}
-
-h1 {
-  color: white;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-family: century-gothic, sans-serif;
-  font-weight: 700;
-}
-
-.title {
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: space-between;
- padding-top: 4.5rem;
- margin-bottom: 1.5rem;
- letter-spacing: 1px;
-}
-
-.title-icons {
- display: flex;
- height: 2.5rem;
-}
-
-p {
- font-size: 0.75rem;
- line-height: 1.5rem;
- font-family: 'Mulish', sans-serif;
- font-weight: 400;
- font-size: 0.75rem;
- line-height: 1.5rem;
-}
-
-/****** mobile ******/ 
-
-@media (min-width: 350px){
- p {
-  font-size: 1rem;
-  line-height: 2rem;
- }
-}
-
-/****** tablet ******/
-
-@media (min-width: 744px){
-
- section {
-   padding-bottom: 5rem;
- }
-
- h1 {
-   font-size: 5rem;
-   line-height: 6rem;
- }
-
- .title {
-   padding-top: 10rem;
-   margin-bottom: 5rem;
- }
- 
- .title-icons {
-   height: 5rem;
- }
-
- p {
-   font-size: 1.25rem;
-   line-height: 2.5rem;
- }
-}
-
-@media (min-width: 1024px){
-
- .left-col{
-   max-width: 48%;
-   margin-right: 2%;
- }
-
- .right-col{
-   max-width: 48%;
-   padding-left: 2%;
- }
-
-}
-
-/****** desktop ******/
-
-@media (min-width: 1200px){
- section {
-   border-bottom: none;
- }
-
- .content {
-   padding: 0;
-   padding-bottom: 10rem;
-   border-bottom: 1px solid white;
- }
-
- .title {
-   margin-bottom: 5rem;
- }
-
- .title-icons {
-   height: 6.25rem;
- }
-}
-
-@media screen and (max-width: 900px){
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 620px){
-  main {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 20px auto;
-  }
-
-  nav {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  nav h1 {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-  }
-
+  gap: 1.5rem;
 }
