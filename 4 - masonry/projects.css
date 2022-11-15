@@ -254,7 +254,7 @@ p {
   position: relative;
 }
 
-.thumbnail-image {
+.thumbnail-image .short {
   width: 100%;
   overflow: hidden;
   max-height: 350px;
@@ -267,7 +267,6 @@ p {
   opacity: 0.85;
   object-fit: cover;
   border-radius: 1.5rem;
-
 }
 
 .thumbnail:hover img {
@@ -328,8 +327,7 @@ p {
 }
 
 .thumbnail:hover p {
-  transform: skew(-3deg, 0deg);
-  
+  transform: skew(-3deg, 0deg); 
 }
 
 /****** tablet ******/
